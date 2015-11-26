@@ -14,7 +14,10 @@ def line_printer(num): # function for printing line
         line_text=line_text+"-"
     print(line_text)
 def saving_path():
-    input_index=input("Please choose one for playlist location 1-Root Directory 2-Enter Another Location")
+    print("Please choose one for playlist location")
+    print("[1]-Root Directory")
+    print("[2]-Enter Another Location")
+    input_index=input()  
     if int(input_index)==2:
         location=input("Please Enter Saving Location : ")
         location.replace("\\","\\")
